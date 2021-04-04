@@ -13,6 +13,7 @@
 		16910AAC261A58DD00106DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16910AAA261A58DD00106DE4 /* Main.storyboard */; };
 		16910AAE261A58DF00106DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16910AAD261A58DF00106DE4 /* Assets.xcassets */; };
 		16910AB1261A58DF00106DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16910AAF261A58DF00106DE4 /* LaunchScreen.storyboard */; };
+		16910AC5261A654800106DE4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16910AC4261A654800106DE4 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		16910AAD261A58DF00106DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16910AB0261A58DF00106DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16910AB2261A58E000106DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16910AC4261A654800106DE4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		16910AA3261A58DD00106DE4 /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				16910AA4261A58DD00106DE4 /* AppDelegate.swift */,
-				16910AA6261A58DD00106DE4 /* SceneDelegate.swift */,
-				16910AA8261A58DD00106DE4 /* ViewController.swift */,
-				16910AAA261A58DD00106DE4 /* Main.storyboard */,
-				16910AAD261A58DF00106DE4 /* Assets.xcassets */,
-				16910AAF261A58DF00106DE4 /* LaunchScreen.storyboard */,
-				16910AB2261A58E000106DE4 /* Info.plist */,
+				16910ABA261A5A4600106DE4 /* ViewControllers */,
+				16910ABC261A5A6B00106DE4 /* Models */,
+				16910ABD261A5A8300106DE4 /* Storyboards */,
+				16910ABF261A5AA600106DE4 /* Supports */,
+				16910ABE261A5A9400106DE4 /* Resources */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		16910ABA261A5A4600106DE4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				16910AA8261A58DD00106DE4 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		16910ABC261A5A6B00106DE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16910AC4261A654800106DE4 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16910ABD261A5A8300106DE4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				16910AAA261A58DD00106DE4 /* Main.storyboard */,
+				16910AAF261A58DF00106DE4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		16910ABE261A5A9400106DE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16910AAD261A58DF00106DE4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		16910ABF261A5AA600106DE4 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				16910AA4261A58DD00106DE4 /* AppDelegate.swift */,
+				16910AA6261A58DD00106DE4 /* SceneDelegate.swift */,
+				16910AB2261A58E000106DE4 /* Info.plist */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16910AA9261A58DD00106DE4 /* ViewController.swift in Sources */,
+				16910AC5261A654800106DE4 /* Question.swift in Sources */,
 				16910AA5261A58DD00106DE4 /* AppDelegate.swift in Sources */,
 				16910AA7261A58DD00106DE4 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +332,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GGTGUU9V2F;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/Supports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.dvoryak.PersonalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +352,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GGTGUU9V2F;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/Supports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.dvoryak.PersonalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
